@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="Tivo is a HTML landing page template built with Bootstrap to help you crate engaging presentations for SaaS apps and convert visitors into users.">
+    <meta name="author" content="Inovatik">
+
+    <!-- Website Title -->
+    <title>Natural Language Generation </title>
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext"
+        rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/bootstrap.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/fontawesome-all.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/styles.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/swiper.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static',filename='css/magnific-popup.css') }}" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Droid+Sans+Mono" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jquery-highlighttextarea/3.1.3/jquery.highlighttextarea.css"
+        integrity="sha512-NuDJ8dpZvjVnfu6k3aRIqw+qfdidDZnnvFMHnVP4n3ZIokJmawPnmuSJBQWFff4xwjWA5N/8OtQEzs6cifDLMw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-highlighttextarea/3.1.3/jquery.highlighttextarea.min.js"
+        integrity="sha512-chIsjWxJnMERODBM+fhp7xsJzD/k1Rp3qpY+xdCnmy3DrlIRvoYl4RqZbPxmpMYi4p+eT9MLtvNJMhwzQFsrYg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <script type="text/javascript" src="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/jquery-tourer@1.0.1/dist/jquery-tourer.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
+    <link rel="icon"
+        href="https://cdn-icons-png.flaticon.com/512/9143/9143797.png">
+    <script src="https://unpkg.com/intro.js/minified/intro.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/intro.js/minified/introjs.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.js"
+        integrity="sha512-ZHzbWDQKpcZxIT9l5KhcnwQTidZFzwK/c7gpUUsFvGjEsxPusdUCyFxjjpc7e/Wj7vLhfMujNx7COwOmzbn+2w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastify-js/1.12.0/toastify.css"
+        integrity="sha512-kT0v1BxcibEO2Yc+6Z3W1gNsN+2cZ/U6uITqHhIJl8SAvt9vpO8llugdCPXA7cCnp8G1xbuSqHNMRaR3Zlz9yA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        a:hover {
+            color: #5f4dee;
+        }
+        .custom-select {
+            /* Add your custom styling here */
+            /* Example styles */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 200px;
+            }
+        .custom{
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            width: 200px;
+        }
+    </style>
+
+
+</head>
+
+<body data-spy="scroll" data-target=".fixed-top">
+
+    <!-- Preloader -->
+    <div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+
+    <!-- Navigation -->
+    <nav style="background-color: #5f4dee;" class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Tivo</a> -->
+
+            <!-- Image Logo -->
+            <div class="navbar-brand" href="index.html">
+                <h6 class="text-white"><img width="45" style="height: auto;"
+                    src="https://cdn-icons-png.flaticon.com/512/9143/9143797.png"
+                    alt="alternative">Natural Language Generation</h6>
+            </div>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                </ul>
+            </div>
+        </div>
+        <!-- end of container -->
+    </nav>
+    <!-- end of navbar -->
+    <!-- end of navigation -->
+
+    <!-- Header -->
+
+    <!-- end of header -->
+    <br>
+    <br>
+    <br>
+
+    <div id="features" class="tabs">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <h3 class="h2-heading">Natural Language Generation</h3>
+                    <!-- <div class="above-heading">SYSTEM</div> -->
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+            <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="nav-tab-1" data-toggle="tab" href="#tab-1" role="tab"
+                        aria-controls="tab-1" aria-selected="true"><i class="fas fa-font"></i>Text Generation</a>
+                </li>
+                
+            </ul>
+            <ul class="nav nav-tabs" id="argoTabs" role="tablist">
+                <li class="nav-item">
+                    <select id="model" class="custom-select" style="margin-left: 50px;">
+                        <option value="lstm">LSTM model</option>
+                        <option value="rnn">RNN model</option>
+                        <option value="gpt">GPT-2 model</option>
+                    </select>
+                </li>
+                <li class="nav-item">
+                    <input id="token" type="text" class="custom" style="margin-left: 250px;" placeholder="Token from 10 - 40">
+                </li>
+        
+            </ul>
+             
+            <div class="row">
+                <div class="col-lg-6">
+                    
+                    <!-- Tabs Content -->
+                    <div class="tab-content pt-3" id="argoTabsContent">
+                    <div class="above-heading">INPUT</div>
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    
+                                    <div class="text-container"
+                                        style="max-width: 800px; margin: 10px auto; padding: 0 20px;color: #495057;">
+                                        <form  name="form1" method="POST"  action="{{ url_for('home') }}" id="formtext" data-toggle="validator" data-focus="false">
+                                            <div class="form-group bg-white">
+
+                                                <textarea name="text" rows="7" cols="100"
+                                                    placeholder=""
+                                                    style="overflow: auto; border: none; outline: none; box-sizing: border-box; max-width: 100%; height: 176px;"
+                                                    name="text" type="text" id="text"
+                                                    class="string-example  hwt-input hwt-content" required></textarea>
+
+
+                                            </div>
+                                            <div class="form-group checkbox">
+                                                <!-- <a type="text" id="nterms">Sau khi nhấn nút "Generatate" vui lòng đợi
+                                                    trong giây
+                                                    lát. </a> -->
+                                            </div>
+                                            <button type="submit"
+                                                class="btn-solid-reg popup-with-move-anim">GENERATE</button>
+                                        </form>
+
+                                    </div>
+
+                                    <!-- end of text-container -->
+
+                                </div>
+                                <!-- end of col -->
+                            
+                                <!-- end of col -->
+
+                            </div>
+
+                            <!-- end of row -->
+                        </div>
+                        <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                    
+                        <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                    </div>
+                    <!-- end of tab content -->
+                    <!-- end of tabs content -->
+
+                </div>
+                <div class="col-lg-6">
+                    <!-- Tabs Content -->
+                    <div class="tab-content pt-3" id="argoTabsContent">
+                    <div class="above-heading">OUTPUT</div>
+                        <!-- Tab -->
+                        <div class="tab-pane fade show active" id="tab-1" role="tabpanel" aria-labelledby="tab-1">
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <div class="text-container"
+                                        style="max-width: 800px; margin: 10px auto; padding: 0 20px;color: #495057;">
+                                            <div class="form-group bg-white">
+
+                                                <textarea name="text" rows="7" cols="100"
+                                                    placeholder=""
+                                                    style="overflow: auto; border: none; outline: none; box-sizing: border-box; max-width: 100%; height: 176px;"
+                                                    name="message" type="text" id="resu"
+                                                    class="string-example  hwt-input hwt-content" required></textarea>
+                                            </div>
+                                            <button type="button" id="clearButton"  style='display: inline-block; padding: 1.1875rem 2.125rem 1.1875rem 2.125rem; border: 0.125rem solid #d9534f; border-radius: 2rem; background-color: #d9534f; color: #fff; font: 700 0.875rem/0 "Open Sans", sans-serif; text-decoration: none; transition: all 0.2s;'>CLEAR</button>
+
+
+                                    </div>
+
+                                    <!-- end of text-container -->
+
+                                </div>
+                                <!-- end of col -->
+                            
+                                <!-- end of col -->
+
+                            </div>
+
+                            <!-- end of row -->
+                        </div>
+                        <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                        <!-- Tab -->
+                    
+                        <!-- end of tab-pane -->
+                        <!-- end of tab -->
+
+                    </div>
+                    <!-- end of tab content -->
+                    <!-- end of tabs content -->
+
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- end of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+
+    <!-- end of tabs -->
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Copyright &copy; 2023. All Rights Reserved.</a>
+                    </p>
+                </div>
+                <!-- end of col -->
+            </div>
+            <!-- enf of row -->
+        </div>
+        <!-- end of container -->
+    </div>
+    <!-- end of copyright -->
+    <!-- end of copyright -->
+
+
+    <!-- Scripts -->
+    <!-- <script src="{{ url_for('static',filename='js/jquery.min.js') }}">
+    </script> -->
+    <script src="{{ url_for('static',filename='js/popper.min.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/bootstrap.min.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/jquery.easing.min.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/swiper.min.js.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/jquery.magnific-popup.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/validator.min.js') }}">
+    </script>
+    <script src="{{ url_for('static',filename='js/scripts.js') }}">
+    </script>
+    <!--     <script src="https://cdn.jsdelivr.net/gh/reymon359/web-experiments/Social%20Signature/socialsignature.min.js"
+        crossorigin="anonymous"></script> -->
+
+    <script>
+        if (window.history.replaceState) {
+            window.history.replaceState(null, null, window.location.href);
+        }
+    </script>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                $('#formtext').on('submit', function (e) {
+                    e.preventDefault();
+                        $.ajax({
+                            data: {
+                                text : $('#text').val(),
+                                model : $('#model').val(),
+                                token : $('#token').val()
+                            },
+                            type: 'POST',
+                            url: '/generate',
+                            success: function (predictResponse) {
+                                // Hiển thị kết quả từ AJAX thứ nhất
+                                $('#resu').html(predictResponse).show();
+                            }
+                        });
+            });
+        });
+        // Get references to the textarea and button elements
+            var textarea = document.getElementById('resu');
+            var clearButton = document.getElementById('clearButton');
+
+            // Add event listener to the button
+            clearButton.addEventListener('click', function() {
+            // Clear the textarea by setting its value to an empty string
+            textarea.value = '';
+            });
+    </script>
+</body>
+
+</html>
